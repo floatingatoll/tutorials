@@ -1,0 +1,3 @@
+[submodule "webops-websec-guide"]
+	path = webops-websec-guide
+	url = git@github.com:floatingatoll/webops-websec-guide.git
