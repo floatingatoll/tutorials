@@ -1,5 +1,7 @@
 # DNS
 
+Last updated: December 2017
+
 ## Hostnames were not enough.
 
 Originally, everything just had a hostname, and you either memorized the IP address or added it to /etc/hosts.

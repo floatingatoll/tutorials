@@ -1,5 +1,7 @@
 # CSP training
 
+Last updated: July 2017
+
 ## Constructing a CSP header
 
 * The header name is `Content-Security-Policy` or `Content-Security-Policy-Report-Only`.

@@ -1,5 +1,7 @@
 # TLS training
 
+Last updated: July 2017
+
 ## What are SSL and TLS?
 
 * The terms "SSL/TLS", "SSL", and "TLS" are typically used to mean the same thing.
