@@ -4,6 +4,20 @@ I'm Richard Soderberg, and this is my training content repository.
 
 ## Content:
 
+### Securing WebOps websites using Web Security Headers
+
+In 2016, the WebOps team was tasked with improving the Observatory scores of
+many of their hosted sites. I saw an opportunity to distill the judgement calls
+made by the team into a simple guiding principles document. This document
+compiles my best judgement on scenarios likely to be encountered and how to
+respond to them with HTTP headers. It complements Infosec's guidelines (and
+wherever we both make a judgement, it should agree). We may merge them someday.
+
+Links:
+
+* [Securing WebOps websites using Web Security Headers](webops-websec-guide/README.md)
+* [Infosec Web Security Guidelines](https://infosec.mozilla.org/guidelines/web_security.html)
+
 ### DNS tutorial
 
 Early in 2017, one of our certificate issuers began enforcing `CAA` records.
