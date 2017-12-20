@@ -72,6 +72,12 @@ As of December 2017, these are generally targeted for the WebOps team at Mozilla
 
 "Systems Administrators", with a special focus on websites and SaaS providers.
 
+### Will there be videos someday?
+
+I'd like that, yes.
+
+## Concerns:
+
 ### You made a technical/factual/typo error.
 
 I'm sorry. Please open an issue and/or pull request for me to consider merging.
@@ -89,7 +95,3 @@ This content is "website content", which per our [licensing policies] is general
 ### Some of these documents use smart quotes!
 
 Indeed. Smart quotes are restricted to body copy. Please open an issue if you find any in code.
-
-### Will there be videos someday?
-
-I'd like that, yes.
