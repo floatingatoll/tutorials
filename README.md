@@ -66,6 +66,7 @@ Links:
 * [Foundeo's CSP Reference](https://content-security-policy.com/)
 * [Mozilla's Laboratory Extension](https://addons.mozilla.org/en-US/firefox/addon/laboratory-by-mozilla/)
 * [report-uri.com](https://report-uri.com/)
+* [AppSec EU 2017: Exploiting CORS Misconfigurations](https://www.youtube.com/watch?v=wgkj4ZgxI4c)
 
 ## FAQ:
 
