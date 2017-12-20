@@ -75,3 +75,7 @@ This content is "website content", which per our [licensing policies] is general
 ### Some of these documents use smart quotes!
 
 Indeed. Smart quotes are restricted to body copy. Please open an issue if you find any in code.
+
+### Will there be videos someday?
+
+I'd like that, yes.
