@@ -26,9 +26,13 @@ providing such on a specific single subdomain. We were able to resolve the
 issue, but the intracacies of the issue (`SERVFAIL` vs. `NXDOMAIN`) exposed a
 need for further training. This tutorial was presented in story form
 paralleling the document, with a short segment of time with an editor open on a
-BIND zone file to explain various nuances.
+BIND zone file to explain various nuances. I did not provide a detailed
+explanation of DNSSEC as our time did not permit, but Shyam's done this before.
 
-Link: [DNS tutorial](dns/dns.md) ([PDF](dns/dns.pdf))
+Links:
+
+* [DNS tutorial](dns/dns.md) ([PDF](dns/dns.pdf))
+* [Shyam Mani: DNSSEC @ Mozilla](https://hasgeek.tv/fossdotin/2012-2/118-shyam-mani-dnssec-mozilla)
 
 ### TLS tutorial
 
@@ -61,6 +65,7 @@ Links:
 
 * [Foundeo's CSP Reference](https://content-security-policy.com/)
 * [Mozilla's Laboratory Extension](https://addons.mozilla.org/en-US/firefox/addon/laboratory-by-mozilla/)
+* [report-uri.com](https://report-uri.com/)
 
 ## FAQ:
 
