@@ -44,13 +44,29 @@ To remove someone from this list, `Chanserv: FLAGS #example MODIFY one_mask -*` 
 
 ## Restricted channels
 
-There are a lot of possible channel restrictions. We typically use two forms of restriction, which may be combined if desired.
+IRC channels permit anyone to join, whether public or secret. Restrictions may be configured to secure the channel.
 
-### Invite-only
+### Possible restrictions
 
-People must be invited to the channel or they will be unable to join. TODO
+Typically most channels use a single restriction only, but these may be combined as needed.
 
-### Password-protected
+#### Invite-only
+
+People must be invited to the channel or they will be unable to join. If their client disconnects, they will need to be invited to rejoin. If they have sufficient access levels, they may ask Chanserv to invite them in.
+
+TODO
+
+#### Password-protected
+
+People must have the password to join the channel or they will be unable to join. Most clients remember the password and will be able to rejoin until it is changed.
+
+TODO
+
+#### Restricted-members
+
+People must be on the Chanserv access list for the channel, TODO
+
+TODO about insufficient vs. other two
 
 TODO
 
@@ -58,7 +74,21 @@ TODO
 
 Chat bots need to be able to join a channel to interact with it. `Chanserv: FLAGS #example bot_name +Gi` will grant a given `bot_name` permission to use two additional Chanserv commands, `INVITE #example` and `GETKEY #example`.
 
-When the bot needs access to an invite-only channel, TODO
+#### Joining restricted channels
+
+TODO: too much detail, not enough guidance
+
+Ensure that your code is prepared for this scenario by verifying that it can `JOIN #example` successfully. Some IRC frameworks do not throw exceptions when this occurs.
+
+Ensure that your bot is registered with Nickserv and is configured to sign in with Nickserv. Using SASL to do so is strongly encouraged, but the classical `Nickserv: IDENTIFY a_password` method is acceptable.
+
+If the channel is password-protected, the bot may send `Chanserv: GETKEY #example` to retrieve the channel key, and then `JOIN #example the_key` to join the channel. This has a slight possibility of a race condition if the channel key is altered between the `GETKEY` and `JOIN` commands.
+
+If the channel is invite-only, the bot may send `Chanserv: INVITE #example` to be invited into the channel, and then `JOIN #example` to join the channel. The invite lasts for a short period of time, so as long as the `JOIN` is sent in a timely manner the bot should be able to enter.
+
+If the channel is restricted-members, the bot may simply `JOIN #example` to join the channel once it is added to the approved members list by an admin. If other restrictions are applied to the channel, the bot must satisfy those as well.
+
+If a given channel is both password-protected and invite-only, the bot need only use `Chanserv: INVITE #example` to join the channel. While redundant, it's permitted to use both `GETKEY` and `INVITE`.
 
 ## TODO
 
