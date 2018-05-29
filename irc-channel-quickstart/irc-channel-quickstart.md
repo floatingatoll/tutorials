@@ -46,19 +46,23 @@ To remove someone from this list, `Chanserv: FLAGS #example MODIFY one_mask -*` 
 
 IRC channels permit anyone to join, whether public or secret. Restrictions may be configured to secure the channel.
 
+### What's the best approach?
+
+Set a password on the channel so that anyone with the password can join.
+
 ### Possible restrictions
 
 Typically most channels use a single restriction only, but these may be combined as needed.
 
-#### Invite-only
-
-People must be invited to the channel or they will be unable to join. If their client disconnects, they will need to be invited to rejoin. If they have sufficient access levels, they may ask Chanserv to invite them in.
-
-TODO
-
 #### Password-protected
 
 People must have the password to join the channel or they will be unable to join. Most clients remember the password and will be able to rejoin until it is changed.
+
+TODO
+
+#### Invite-only
+
+People must be invited to the channel or they will be unable to join. If their client disconnects, they will need to be invited to rejoin. If they have sufficient access levels, they may ask Chanserv to invite them in.
 
 TODO
 
